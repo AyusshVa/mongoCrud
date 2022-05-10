@@ -131,7 +131,6 @@ app.post("/update", (req, res) => {
     });
 })
 
-
-app.listen("3000" || process.env.PORT  , () => {
-    console.log("server is running and up!")
-})
+app.listen(process.env.PORT || "3000", () => {
+    console.log("server is runnng and up intern")
+ })
