@@ -54,8 +54,7 @@ app.post("/", (req, res) => {
     // code to insert the document into the collection: 
     techModel.create(obj, (err) => {
         if (err) console.log(err);
-        res.send("added")
-        res.end();
+        res.render("added")
     })
 })
 
